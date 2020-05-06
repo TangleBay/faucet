@@ -30,18 +30,6 @@
         </iota-payment>
       </div>
     </div>
-    <span><i18n path="curl" /></span><br>
-    <div class="CURL">
-      curl --header "Content-Type: application/json" \<br>
-      --request POST \<br>
-      --data '{<br>
-      "address":"CP9LDJQPBNRBRWWNPI9XSUSLCTWZEBG9NMANXDWDJHMFSHSBVRIWGKVOCFWVETVBWBAKOZURNZE9NSCGDWEZXAXSFW",<br>
-      "value":0,<br>
-      "message":"TANGLEBAY", <br>
-      "tag": "TANGLEBAY"<br>
-      }' \<br>
-      https://faucet.tanglebay.org/pay_tokens
-    </div>
   </div>
 </template>
 
