@@ -3,13 +3,13 @@
     <div class="row">
       <div class="footer-main">
         <a
-          href="https://www.einfachiota.de/#/"
+          href="https://tanglebay.org/"
           class="footer-logo"
           exact-active-class="active"
           target="_blank"
         >
           <img
-            alt="einfachIOTA"
+            alt="Tangle Bay"
             class="logo"
             src="../assets/logo.png"
           >
@@ -21,25 +21,32 @@
         </h4>
         <div class="divider" />
         <a
-          href="https://www.einfachiota.de/"
+          href="https://tanglebay.org/swarm"
           target="_blank"
           class="footer-main-link"
         >
           <i18n path="footer.col_1.link1" />
         </a>
         <a
-          href="https://blog.einfachiota.de/"
+          href="https://tanglebay.org/en/autopeering/"
           target="_blank"
           class="footer-main-link"
         >
           <i18n path="footer.col_1.link2" />
         </a>
         <a
-          href="https://magazin.einfachiota.de/"
+          href="https://tanglebay.org/en/snapshots/"
           target="_blank"
           class="footer-main-link"
         >
           <i18n path="footer.col_1.link3" />
+        </a>
+        <a
+          href="https://status.tanglebay.org"
+          target="_blank"
+          class="footer-main-link"
+        >
+          <i18n path="footer.col_1.link4" />
         </a>
       </div>
       <div class="footer-main">
@@ -48,19 +55,11 @@
         </h4>
         <div class="divider" />
         <a
-          href="https://tanglebay.org/"
+          href="https://www.einfachiota.de"
           target="_blank"
           class="footer-main-link"
         >
           <i18n path="footer.col_2.link1" />
-        </a>
-
-        <a
-          href="https://iotashops.com/"
-          target="_blank"
-          class="footer-main-link"
-        >
-          <i18n path="footer.col_2.link2" />
         </a>
       </div>
       <div class="footer-main">
@@ -76,14 +75,14 @@
           <i18n path="footer.col_3.link1" />
         </a>
         <a
-          href="https://ecosystem.iota.org"
+          href="https://blog.iota.org"
           target="_blank"
           class="footer-main-link"
         >
           <i18n path="footer.col_3.link2" />
         </a>
         <a
-          href="https://blog.iota.org"
+          href="https://status.iota.org"
           target="_blank"
           class="footer-main-link"
         >
@@ -96,24 +95,24 @@
         <i18n path="footer.copyright" />
         <span class="heart">&#10084;</span> by
         <a
-          href="https://www.einfachiota.de/"
+          href="https://tanglebay.org/"
           target="_blank"
           class="footer-link"
-        >einfachIOTA</a>
+        >Tangle Bay</a>
       </div>
       <div class="footer-bottom-col">
         <a
-          href="https://discord.gg/WdfXseU"
+          href="https://discord.tanglebay.org"
           target="_blank"
           class="footer-main-link"
         >Discord</a>
         <a
-          href="https://twitter.com/einfachIOTA"
+          href="https://twitter.com/TangleBay"
           target="_blank"
           class="footer-main-link"
         >Twitter</a>
         <a
-          href="https://github.com/einfachiota"
+          href="https://github.com/tanglebay"
           target="_blank"
           class="footer-main-link"
         >Github</a>
@@ -146,14 +145,14 @@
 
       <div class="footer-bottom-col">
         <a
-          href="https://www.einfachiota.de/#/imprint"
+          href="https://tanglebay.org/legal-notice"
           target="_blank"
           class="footer-main-link"
         >
           <i18n path="footer.imprint" />
         </a>
         <a
-          href="https://www.einfachiota.de/#/privacy"
+          href="https://tanglebay.org/privacy-policy"
           target="_blank"
           class="footer-main-link"
         >
