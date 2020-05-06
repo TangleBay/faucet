@@ -35,12 +35,12 @@
       curl --header "Content-Type: application/json" \<br>
       --request POST \<br>
       --data '{<br>
-      "address":"AHSD9FUNQCLBYQZQVZMOQLGQLYPWWNEWIIMJTVPQAA9LAHVQPVRBZODCKVGYNQAXVZMBWDIUEFVKOJHPCLRBHEISVA",<br>
+      "address":"CP9LDJQPBNRBRWWNPI9XSUSLCTWZEBG9NMANXDWDJHMFSHSBVRIWGKVOCFWVETVBWBAKOZURNZE9NSCGDWEZXAXSFW",<br>
       "value":0,<br>
-      "message":"EINFACHIOTA", <br>
-      "tag": "EINFACHIOTA"<br>
+      "message":"TANGLEBAY", <br>
+      "tag": "TANGLEBAY"<br>
       }' \<br>
-      https://faucet.comnet.einfachiota.de/pay_tokens
+      https://faucet.tanglebay.org/pay_tokens
     </div>
   </div>
 </template>

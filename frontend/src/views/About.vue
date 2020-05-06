@@ -16,7 +16,7 @@
         </h2>
         <a
           target="_blank"
-          href="https://github.com/einfachiota/faucet.einfachIOTA.de"
+          href="https://github.com/tanglebay/faucet.tanglebay.org"
           rel="noreferrer"
         >
           <i18n path="about.faucetlink" />
