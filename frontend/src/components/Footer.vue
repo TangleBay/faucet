@@ -11,7 +11,7 @@
           <img
             alt="einfachIOTA"
             class="logo"
-            src="../assets/logo.svg"
+            src="../assets/logo.png"
           >
         </a>
       </div>
