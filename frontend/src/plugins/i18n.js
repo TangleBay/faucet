@@ -8,13 +8,13 @@ export const i18n = new VueI18n({
 	fallbackLocale: 'en',
 	messages: {
 		en: {
-			subheadline: 'Simply send IOTA',
+			subheadline: 'Just get IOTA',
 			iota_is_free: 'IOTA is feeless!',
 			tx_on_thetangle: 'Watch transaction on',
 			how_it_works: 'How does the faucet work?',
 			available_tokens: 'Available Tokens:',
 			fill: 'Fill the Faucet',
-			spend_iota: 'Spend IOTA',
+			spend_iota: 'Get IOTAs',
 			transaction_address: 'You can follow the transaction at',
 			transaction_address1: '.',
 			transaction_sent: 'Transaction sent:',
@@ -37,7 +37,7 @@ export const i18n = new VueI18n({
 			},
 			about: {
 				heading: 'The IOTA faucet explained',
-				subheading: 'Simply send IOTA tokens!',
+				subheading: 'Just get IOTA tokens!',
 				faucetlink: 'Faucet Code on Github.',
 				modulelink1: 'The ',
 				modulelink2: 'iota-payment module ',
@@ -45,30 +45,29 @@ export const i18n = new VueI18n({
 			},
 			footer: {
 				col_1: {
-					title: 'einfachIOTA',
-					link1: 'Website',
-					link2: 'Blog',
-					link3: 'Magazine'
+					title: 'Tangle Bay',
+					link1: 'SWARM',
+					link2: 'Entrynodes',
+					link3: 'Local Snapshots',
+					link4: 'Status'
 				},
 				col_2: {
 					title: 'Partners',
-					link1: 'TangleBay.org',
-					link2: 'IOTAshop.com',
-					link3: 'iota-news.com'
+					link1: 'einfachIOTA.de'
 				},
 				col_3: {
 					title: 'IOTA',
-					link1: 'Official Website',
-					link2: 'Ecosystem',
-					link3: 'Blog'
+					link1: 'Website',
+					link2: 'Blog',
+					link3: 'Status'
 				},
 				copyright: 'Made with',
-				imprint: 'Imprint',
+				imprint: 'Legal Notice',
 				privacy: 'Privacy Policy'
 			}
 		},
 		de: {
-			subheadline: 'Sende einfach IOTA',
+			subheadline: 'Erhalte einfach IOTAs',
 			iota_is_free: 'IOTA ist gebührenfrei!',
 			tx_on_thetangle: 'Verfolge die Transaktion auf',
 			how_it_works: 'Wie funktioniert das Faucet?',
@@ -105,22 +104,21 @@ export const i18n = new VueI18n({
 			},
 			footer: {
 				col_1: {
-					title: 'einfachIOTA',
-					link1: 'Webseite',
-					link2: 'Blog',
-					link3: 'Magazin'
+					title: 'Tangle Bay',
+					link1: 'SWARM',
+					link2: 'Entrynodes',
+					link3: 'Local Snapshots',
+					link4: 'Status'
 				},
 				col_2: {
 					title: 'Partner',
-					link1: 'TangleBay.org',
-					link2: 'IOTAshops.com',
-					link3: 'iota-news.com'
+					link1: 'einfachIOTA.de',
 				},
 				col_3: {
 					title: 'IOTA',
-					link1: 'Offizielle Webseite',
-					link2: 'Ökosystem',
-					link3: 'Blog'
+					link1: 'Webseite',
+					link2: 'Blog',
+					link3: 'Status'
 				},
 				copyright: 'Gemacht mit',
 				imprint: 'Impressum',
