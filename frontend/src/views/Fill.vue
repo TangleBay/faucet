@@ -12,11 +12,21 @@
 
     <div class="section section-background">
       <div class="container">
-        <b><p>
+        <h3>
           <i18n path="available_tokens" />
           {{ total_tokens }}
-        </p></b>
-        <Form />
+        </h3>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h2>
+          <i18n path="fill" />
+        </h2>
+        <iota-payment>
+          <i18n path="send" />
+          {{ network }} IOTA
+        </iota-payment>
       </div>
     </div>
   </div>
@@ -28,7 +38,7 @@ import Form from '@/components/Form';
 import axios from 'axios';
 
 export default {
-	name: 'Home',
+	name: 'Fill',
 	components: {
 		Form
 	},
