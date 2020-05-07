@@ -89,7 +89,7 @@
         <i18n path="send" />!
       </el-button>
     </el-form-item>
-    <router-link to="about">
+    <!--<router-link to="about">
       <i18n path="how_it_works" />
     </router-link>
     <div>
@@ -98,7 +98,7 @@
       <br>
       <br>
       <i18n path="data_without_token" />
-    </div>
+    </div>-->
   </el-form>
 </template>
 
