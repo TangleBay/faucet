@@ -65,7 +65,7 @@
         >{{ tangleExporer }}</a>
       </p>
     </div>
-    <div v-if="typeof ruleForm.errors !== 'undefined' && ruleForm.errors.length > 0">
+    <div v-if="typeof ruleForm.errors !== 'undefined' && ruleForm.errors.length > 1">
       <p
         v-for="(err, index) in ruleForm.errors"
         :key="index"
@@ -163,7 +163,7 @@ export default {
 			clicked: false,
 			ruleForm: {
 				address: this.$route.query.address || '',
-				value: this.$route.query.value || 0,
+				value: this.$route.query.value || 1,
 				message: this.$route.query.message || '',
 				errors: []
 			},
