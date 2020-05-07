@@ -39,9 +39,6 @@ import axios from 'axios';
 
 export default {
 	name: 'Fill',
-	components: {
-		Form
-	},
 	data() {
 		return {
 			total_tokens: '',
