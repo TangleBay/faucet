@@ -56,8 +56,8 @@ p {
   line-height: 1.5;
 }
 :root {
-  --primary: #00b7c5;
-  --primary-darken: #03a3af;
+  --primary: #56cb90;
+  --primary-darken: #48a878;
   --secondary: #0b5d9e;
   --secondary-2: #5ab0b2;
   --dark: #3d4449;

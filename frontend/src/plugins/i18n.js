@@ -61,7 +61,7 @@ export const i18n = new VueI18n({
 					link2: 'Blog',
 					link3: 'Status'
 				},
-				copyright: 'Made with',
+				copyright: 'Provided with',
 				imprint: 'Legal Notice',
 				privacy: 'Privacy Policy'
 			}
@@ -120,7 +120,7 @@ export const i18n = new VueI18n({
 					link2: 'Blog',
 					link3: 'Status'
 				},
-				copyright: 'Gemacht mit',
+				copyright: 'Betrieben mit',
 				imprint: 'Impressum',
 				privacy: 'Datenschutz'
 			}
