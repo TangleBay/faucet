@@ -7,7 +7,6 @@
       <br>
       <p class="sub-heading">
         <i18n path="subheadline" />
-        {{ network }} Tokens!
       </p>
     </div>
 
