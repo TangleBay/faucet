@@ -15,7 +15,7 @@
         v-model="ruleForm.address"
         type="text"
         autocomplete="off"
-        :placeholder="`IOTA ${network} `+$t('form.address_label')"
+        :placeholder="CP9LDJQPBNRBRWWNPI9XSUSLCTWZEBG9NMANXDWDJHMFSHSBVRIWGKVOCFWVETVBWBAKOZURNZE9NSCGDWEZXAXSFW"
       />
     </el-form-item>
     <el-form-item
