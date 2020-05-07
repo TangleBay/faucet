@@ -13,10 +13,11 @@
 
     <div class="section section-background">
       <div class="container">
-        <h3>
+        <h4>
           <i18n path="available_tokens" />
           {{ total_tokens }}
-        </h3>
+        </h4>
+        <br>
         <Form />
       </div>
     </div>
