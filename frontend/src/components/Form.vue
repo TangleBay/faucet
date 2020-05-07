@@ -25,9 +25,9 @@
       <input
         id="myRange"
         type="range"
-        min="0"
+        min="1"
         :max="maxValue"
-        value="0"
+        value="1"
         class="slider"
         @input="changePayoutValue"
         @change="changePayoutValue"
@@ -36,7 +36,7 @@
         v-model="ruleForm.value"
         type="number"
         autocomplete="off"
-        placeholder="0"
+        placeholder="1"
       />
     </el-form-item>
     <el-form-item
