@@ -34,7 +34,6 @@
 
 <script>
 // @ is an alias to /src
-import Form from '@/components/Form';
 import axios from 'axios';
 
 export default {
