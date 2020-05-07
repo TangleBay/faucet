@@ -6,6 +6,7 @@ Vue.use(Router);
 
 export default new Router({
 	mode: 'history',
+	hash: false,
 	scrollBehavior(to, from, savedPosition) {
 		if (savedPosition) {
 			return savedPosition;
@@ -32,5 +33,6 @@ export default new Router({
 			name: 'fill',
 			component: () => import(/* webpackChunkName: "fill" */ './views/Fill.vue')
 		},
+		{ path: '*', redirect: '/' }, // catch all use case
 	]
 });
