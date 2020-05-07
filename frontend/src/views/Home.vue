@@ -4,6 +4,7 @@
       <h1 class="heading">
         IOTA {{ network }} Faucet
       </h1>
+      <br>
       <p class="sub-heading">
         <i18n path="subheadline" />
         {{ network }} Tokens!
@@ -12,10 +13,10 @@
 
     <div class="section section-background">
       <div class="container">
-        <b><p>
+        <h3>
           <i18n path="available_tokens" />
           {{ total_tokens }}
-        </p></b>
+        </h3>
         <Form />
       </div>
     </div>

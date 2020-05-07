@@ -8,7 +8,7 @@
     label-position="top"
   >
     <el-form-item
-      :label="`IOTA ${network} `+$t('form.address_label')"
+      :label="$t('form.address_label')"
       prop="address"
     >
       <el-input
@@ -19,7 +19,7 @@
       />
     </el-form-item>
     <el-form-item
-      :label="'IOTA '+$t('form.amount')"
+      :label="$t('form.amount')"
       prop="value"
     >
       <input

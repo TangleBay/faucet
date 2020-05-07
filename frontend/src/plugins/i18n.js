@@ -23,8 +23,8 @@ export const i18n = new VueI18n({
 			transaction_request_sent: 'Transaction is being sent...',
 			curl: 'You can also use this curl command to get tokens (replace address and value):',
 			form: {
-				address_label: 'address',
-				amount: 'amount',
+				address_label: 'IOTA receiving address',
+				amount: 'Amount of IOTAs',
 				message: 'Message',
 				message_placeholder: 'Message (optional)',
 				err: {
@@ -61,7 +61,7 @@ export const i18n = new VueI18n({
 					link2: 'Blog',
 					link3: 'Status'
 				},
-				copyright: 'Provided with',
+				copyright: 'Provided with ',
 				imprint: 'Legal Notice',
 				privacy: 'Privacy Policy'
 			}
@@ -82,8 +82,8 @@ export const i18n = new VueI18n({
 			transaction_request_sent: 'Transaktion wird gesendet...',
 			curl: 'Du kannst auch den curl Befehl benutzen um Tokens zu bekommen (ersetze die Adresse und den Wert):',
 			form: {
-				address_label: 'Adresse',
-				amount: 'Menge',
+				address_label: 'IOTA Empfangsadresse',
+				amount: 'Anzahl an IOTAs',
 				message: 'Nachricht',
 				message_placeholder: 'Nachricht (optional)',
 				err: {
@@ -120,7 +120,7 @@ export const i18n = new VueI18n({
 					link2: 'Blog',
 					link3: 'Status'
 				},
-				copyright: 'Betrieben mit',
+				copyright: 'Bereitgestellt mit ',
 				imprint: 'Impressum',
 				privacy: 'Datenschutz'
 			}
