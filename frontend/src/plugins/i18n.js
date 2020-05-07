@@ -78,7 +78,7 @@ export const i18n = new VueI18n({
 			transaction_address1: 'verfolgen.',
 			transaction_sent: 'Transaktion gesendet:',
 			data_without_token: 'Daten können ohne den Besitz von IOTA Token versendet werden!',
-			send: 'Sende',
+			send: 'Senden',
 			transaction_request_sent: 'Transaktion wird gesendet...',
 			curl: 'Du kannst auch den curl Befehl benutzen um Tokens zu bekommen (ersetze die Adresse und den Wert):',
 			form: {
