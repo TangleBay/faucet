@@ -2,7 +2,7 @@
   <div class="home">
     <div class="hero">
       <h1 class="heading">
-        IOTA {{ network }} Faucet
+        IOTA Faucet
       </h1>
       <br>
       <p class="sub-heading">

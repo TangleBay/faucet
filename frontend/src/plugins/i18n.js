@@ -24,7 +24,7 @@ export const i18n = new VueI18n({
 			curl: 'You can also use this curl command to get tokens (replace address and value):',
 			form: {
 				address_label: 'IOTA receiving address',
-				amount: 'Amount of IOTAs',
+				amount: 'Amount of IOTA Token',
 				message: 'Message',
 				message_placeholder: 'Message (optional)',
 				err: {
@@ -83,7 +83,7 @@ export const i18n = new VueI18n({
 			curl: 'Du kannst auch den curl Befehl benutzen um Tokens zu bekommen (ersetze die Adresse und den Wert):',
 			form: {
 				address_label: 'IOTA Empfangsadresse',
-				amount: 'Anzahl an IOTAs',
+				amount: 'Anzahl an IOTA Token',
 				message: 'Nachricht',
 				message_placeholder: 'Nachricht (optional)',
 				err: {
