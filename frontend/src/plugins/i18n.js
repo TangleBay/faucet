@@ -8,7 +8,7 @@ export const i18n = new VueI18n({
 	fallbackLocale: 'en',
 	messages: {
 		en: {
-			subheadline: 'Get IOTA Tokens',
+			subheadline: 'Get IOTA Tokens for testing',
 			iota_is_free: 'IOTA is feeless!',
 			tx_on_thetangle: 'Watch transaction on',
 			how_it_works: 'How does the faucet work?',
@@ -67,7 +67,7 @@ export const i18n = new VueI18n({
 			}
 		},
 		de: {
-			subheadline: 'Erhalte IOTA Token',
+			subheadline: 'Erhalte IOTA Token zum testen',
 			iota_is_free: 'IOTA ist gebührenfrei!',
 			tx_on_thetangle: 'Verfolge die Transaktion auf',
 			how_it_works: 'Wie funktioniert das Faucet?',
