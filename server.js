@@ -93,14 +93,14 @@ app.post("/pay_tokens", function (req, res) {
     let address = req.body.address;
     let value = req.body.value || 0;
     //limit message length to 1 tx
-    let message = 'TANGLE BAY FAUCET'
+    let message = 'IOTA FAUCET'
     if(typeof req.body.message != 'undefined'){
         let reqMessage = req.body.message.slice(0, 1093)
         if(reqMessage != ''){
             message = reqMessage
         }
     }
-    let tag = req.body.tag || 'TANGLEBAY';
+    let tag = req.body.tag || 'IOTA9FAUCET';
     console.log("address", address)
     console.log("value", value)
     if (parseInt(value) > process.env.maxPayoutValue) {
