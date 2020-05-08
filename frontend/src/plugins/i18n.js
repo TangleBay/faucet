@@ -67,7 +67,7 @@ export const i18n = new VueI18n({
 			}
 		},
 		de: {
-			subheadline: 'Erhalte IOTA Token zum testen',
+			subheadline: 'Erhalte IOTA Token zum Testen',
 			iota_is_free: 'IOTA ist gebührenfrei!',
 			tx_on_thetangle: 'Verfolge die Transaktion auf',
 			how_it_works: 'Wie funktioniert das Faucet?',
