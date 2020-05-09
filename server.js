@@ -3,12 +3,18 @@ var express = require('express')
 var app = express()
 var bodyParser = require("body-parser");
 var cors = require('cors');
+let core = require('@iota/core');
 const port = process.env.PORT
 const origins = process.env.allowed_origins.split(', ')
 let maxPayoutValue = process.env.maxPayoutValue
 if(Number.isInteger(maxPayoutValue)){
     throw 'Invalid maxPayoutValue in .env'
 }
+
+let iota = core.composeAPI({
+    provider: JSON.parse(process.env.iotaNodes)[0]
+})
+console.log("Node for getBalance: ", JSON.parse(process.env.iotaNodes)[0]);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -67,7 +73,8 @@ setInterval(()=>{
 }, 86400000)
 
 
-app.post("/pay_tokens", function (req, res) {
+app.post("/pay_tokens", async (req, res) =>{
+    try{
     console.log("pay_tokens called")
     let remoteAddress = req.headers['cf-connecting-ip'] || req.headers['x-forwarded-for'] || req.connection.remoteAddress
     ipaddresseslastminute.push(remoteAddress)
@@ -92,6 +99,14 @@ app.post("/pay_tokens", function (req, res) {
     }
     let address = req.body.address;
     let value = req.body.value || 0;
+    //check if address is empty
+    let balance = await iota.getBalances([address.slice(0, 81)], 100)
+    if(balance.balances[0] != 0){
+        console.log(address, "has already iotas: ", balance.balances[0]);
+        res.send({ type: 'cantsend', msg: 'Please try again later.' });
+        return
+    }
+
     //limit message length to 1 tx
     let message = 'IOTA FAUCET'
     if(typeof req.body.message != 'undefined'){
@@ -117,23 +132,21 @@ app.post("/pay_tokens", function (req, res) {
         // startIndex: 0,
         // endIndex: 1
     }
-    paymentModule.sendPayout(payoutObject)
-        .then(result => {
-            console.log("result", result)
-            ipaddresses.push(remoteAddress)
-            //check if maxpayouts is reached and push to blocked adresses
-            if (ipaddresses.filter(x => x === remoteAddress).length >= dailymaxPayoutsPerIP) {
-                blockedIpAddresses.push(remoteAddress)
-                //delete in ipaddresses to decrease array size
-                ipaddresses = ipaddresses.filter(x => x !== remoteAddress)
-            }
-            lastpayouttime = Date.now()
-            res.send(result);
-        })
-        .catch(err => {
-            console.log(err)
-            res.send({type: 'error', msg:err});
-        })
+    let payout = await paymentModule.sendPayout(payoutObject)
+    console.log("result", payout)
+    ipaddresses.push(remoteAddress)
+    //check if maxpayouts is reached and push to blocked adresses
+    if (ipaddresses.filter(x => x === remoteAddress).length >= dailymaxPayoutsPerIP) {
+        blockedIpAddresses.push(remoteAddress)
+        //delete in ipaddresses to decrease array size
+        ipaddresses = ipaddresses.filter(x => x !== remoteAddress)
+    }
+    lastpayouttime = Date.now()
+    res.send(payout);       
+    }catch(err){
+        console.log(err);
+        res.send({type: 'error', msg:err});
+    }
 })
 
 var options = {
