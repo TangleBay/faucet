@@ -84,17 +84,17 @@ app.post("/pay_tokens", async (req, res) =>{
         }
         //delete in ipaddresses to decrease array size
         ipaddresses = ipaddresses.filter(x => x !== remoteAddress)
-        res.send({ type: 'cantsend', msg: 'Max request per minute reached.' });
+        res.send({ type: 'cantsend', msg: 'D\'Oh! Max request per minute reached.' });
         return
     }
     //allow max one payout per time + max 10 seconds random
     if (Date.now() - minPayoutIntervalinSeconds - Math.floor(Math.random() *10000) < lastpayouttime) {
-        res.send({ type: 'cantsend', msg: 'Please try again later.' });
+        res.send({ type: 'cantsend', msg: 'D\'Oh! Please try again later.' });
         return
     }
     //check ip address is blocked
     if(blockedIpAddresses.indexOf(remoteAddress) != -1){
-        res.send({ type: 'cantsend', msg: 'Max request already reached.' });
+        res.send({ type: 'cantsend', msg: 'D\'Oh! Max request already reached.' });
         return
     }
     let address = req.body.address;
@@ -103,7 +103,7 @@ app.post("/pay_tokens", async (req, res) =>{
     let balance = await iota.getBalances([address.slice(0, 81)], 100)
     if(balance.balances[0] != 0){
         console.log(address, "has already iotas: ", balance.balances[0]);
-        res.send({ type: 'cantsend', msg: 'Please try again later.' });
+        res.send({ type: 'cantsend', msg: 'D\'Oh! Please try again later.' });
         return
     }
 
