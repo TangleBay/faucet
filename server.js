@@ -108,7 +108,7 @@ app.post("/pay_tokens", async (req, res) =>{
     }
 
     //limit message length to 1 tx
-    let message = 'IOTA FAUCET'
+    let message = 'Free IOTA Tokens for testing from the IOTA FAUCET'
     if(typeof req.body.message != 'undefined'){
         let reqMessage = req.body.message.slice(0, 1093)
         if(reqMessage != ''){
