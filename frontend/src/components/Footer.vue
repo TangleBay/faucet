@@ -21,21 +21,14 @@
         </h4>
         <div class="divider" />
         <a
-          href="https://tanglebay.org/swarm"
-          target="_blank"
-          class="footer-main-link"
-        >
-          <i18n path="footer.col_1.link1" />
-        </a>
-        <a
-          href="https://tanglebay.org/en/autopeering/"
+          href="https://tanglebay.org/entrynodes/"
           target="_blank"
           class="footer-main-link"
         >
           <i18n path="footer.col_1.link2" />
         </a>
         <a
-          href="https://tanglebay.org/en/snapshots/"
+          href="https://tanglebay.org/snapshots/"
           target="_blank"
           class="footer-main-link"
         >
@@ -101,11 +94,6 @@
         >Tangle Bay</a>
       </div>
       <div class="footer-bottom-col">
-        <a
-          href="https://discord.tanglebay.org"
-          target="_blank"
-          class="footer-main-link"
-        >Discord</a>
         <a
           href="https://twitter.com/TangleBay"
           target="_blank"
